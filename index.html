@@ -25,8 +25,8 @@
                 <div class="col-5">
                     <form>
                         <div class="mb-3">
-                          <label for="exampleInputEmail1" class="form-label">Email address</label>
-                          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                          <label for="exampleInputEmail1" class="form-label">Card #</label>
+                          <input type="text" class="form-control" placeholder="xxxxxxxxxxxx" aria-label="Username" aria-describedby="basic-addon1">
                 
                         </div>
                     </form>
@@ -34,18 +34,19 @@
                 <div class="col-3">
                     <form>
                         <div class="mb-3">
-                          <label for="exampleInputEmail1" class="form-label">Email address</label>
-                          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                
+                          <label for="exampleInputEmail1" class="form-label">CVC #</label>
+                          <input type="text" class="form-control" placeholder="0000" aria-label="Username" aria-describedby="basic-addon1">                
                         </div>
                     </form>
                 </div>
                 <div class="col-4">
                     <form>
                         <div class="mb-3">
-                          <label for="exampleInputEmail1" class="form-label">Email address</label>
-                          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                
+                          <label for="exampleInputEmail1" class="form-label">Amount</label>
+                          <div class="input-group mb-3 d-flex align-items-center gap-2">
+                            <span>$</span>
+                            <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
+                          </div>
                         </div>
                     </form>
                 </div>
@@ -57,8 +58,8 @@
             <div class="col-6">
                 <form>
                     <div class="mb-3">
-                      <label for="exampleInputEmail1" class="form-label">Email address</label>
-                      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                      <label for="exampleInputEmail1" class="form-label">First Name</label>
+                      <input type="text" class="form-control" aria-label="Username" aria-describedby="basic-addon1">
             
                     </div>
                 </form>
@@ -66,8 +67,8 @@
             <div class="col-6">
                 <form>
                     <div class="mb-3">
-                      <label for="exampleInputEmail1" class="form-label">Email address</label>
-                      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                      <label for="exampleInputEmail1" class="form-label">Last Name</label>
+                      <input type="text" class="form-control" aria-label="Username" aria-describedby="basic-addon1">
             
                     </div>
                 </form>
@@ -79,60 +80,88 @@
             <div class="col-6">
                 <form>
                     <div class="mb-3">
-                      <label for="exampleInputEmail1" class="form-label">Email address</label>
-                      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                      <label for="exampleInputEmail1" class="form-label">City</label>
+                      <input type="text" class="form-control" aria-label="Username" aria-describedby="basic-addon1">
             
                     </div>
                 </form>
             </div>
             <div class="col-3">
-                <form>
-                    <div class="mb-3">
-                      <label for="exampleInputEmail1" class="form-label">Email address</label>
-                      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-            
-                    </div>
-                </form>
+                <label for="exampleInputEmail1" class="form-label">State</label>
+                <select class="form-select" aria-label="Default select example">
+                    <option selected>Pick State</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                  </select>
             </div>
 
             <div class="col-3">
                 <form>
                     <div class="mb-3">
-                      <label for="exampleInputEmail1" class="form-label">Email address</label>
-                      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                      <label for="exampleInputEmail1" class="form-label">Postal Code</label>
+                      <input type="text" class="form-control" aria-label="Username" aria-describedby="basic-addon1">
             
                     </div>
                 </form>
             </div>
 
         </div>
-        <div class="row container-fluid">
+        <div class="row container">
 
             <div class="col-6">
                 <form>
                     <div class="mb-3">
-                      <label for="exampleInputEmail1" class="form-label">Email address</label>
-                      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-            
+                      <label for="exampleInputEmail1" class="form-label">We accept:</label>
+
+                    <div class="d-flex bg-secondary px-2 w-50 grid gap-4 text-light">
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                        <label class="form-check-label" for="flexRadioDefault1">
+                            <i class="fa-brands fa-cc-mastercard"></i>
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                        <label class="form-check-label" for="flexRadioDefault2">
+                            <i class="fa-brands fa-cc-visa"></i>
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                        <label class="form-check-label" for="flexRadioDefault1">
+                            <i class="fa-brands fa-cc-paypal"></i>
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                        <label class="form-check-label" for="flexRadioDefault2">
+                            <i class="fa-brands fa-cc-diners-club"></i>
+                        </label>
+                      </div>
+                    </div>
+
                     </div>
                 </form>
             </div>
             <div class="col-6">
                 <form>
-                    <div class="mb-3">
-                      <label for="exampleInputEmail1" class="form-label">Email address</label>
-                      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-            
-                    </div>
+                
+                        <div class="mb-3">
+                            <label for="exampleFormControlTextarea1" class="form-label">Message</label>
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                          </div>
+                     <div id="exampleFormControlTextarea1" class="form-text">Add any notes here.</div>
+                
                 </form>
             </div>
 
         </div>
 
-        <div class="card-footer text-body-secondary d-flex justify-content-end">
+        <div class="card-footer text-body-secondary d-flex justify-content-end gap-2">
          
-            <button type="button" class="btn btn-secondary">Secondary</button>
-            <button type="button" class="btn btn-primary">Primary</button>
+            <button type="button" class="btn btn-secondary">Cancel</button>
+            <button type="button" class="btn btn-primary">Send</button>
 
         </div>
       </div>
