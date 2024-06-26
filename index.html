@@ -1,172 +1,182 @@
 <!DOCTYPE html>
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <script src="https://kit.fontawesome.com/151280d658.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" type="text/css" href="styles.css">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <script src="https://kit.fontawesome.com/151280d658.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <title>Document</title>
 </head>
+
 <body>
-    
-    <div class="card container mt-5">
-        <div class="card-header">
-          <h3>Payment form example</h3>
-        </div>
-        <div class="card-body">
-            
-            <div class="alert alert-danger text-danger" role="alert">
-                Some fields are missing
-            </div>
 
-            <div class="row container-fluid">
-                <div class="col-5">
-                    <form>
-                        <div class="mb-3">
-                          <label for="exampleInputEmail1" class="form-label">Card #</label>
-                          <input type="text" class="form-control" placeholder="xxxxxxxxxxxx" aria-label="Username" aria-describedby="basic-addon1">
-                
-                        </div>
-                    </form>
-                </div>
-                <div class="col-3">
-                    <form>
-                        <div class="mb-3">
-                          <label for="exampleInputEmail1" class="form-label">CVC #</label>
-                          <input type="text" class="form-control" placeholder="0000" aria-label="Username" aria-describedby="basic-addon1">                
-                        </div>
-                    </form>
-                </div>
-                <div class="col-4">
-                    <form>
-                        <div class="mb-3">
-                          <label for="exampleInputEmail1" class="form-label">Amount</label>
-                          <div class="input-group mb-3 d-flex align-items-center gap-2">
-                            <span>$</span>
-                            <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
-                          </div>
-                        </div>
-                    </form>
-                </div>
+  <div class="card container mt-5">
+    <div class="card-header">
+      <h3>Payment form example</h3>
+    </div>
+    <div class="card-body">
 
-        </div>
-        
-        <div class="row container-fluid">
-
-            <div class="col-6">
-                <form>
-                    <div class="mb-3">
-                      <label for="exampleInputEmail1" class="form-label">First Name</label>
-                      <input type="text" class="form-control" aria-label="Username" aria-describedby="basic-addon1">
-            
-                    </div>
-                </form>
-            </div>
-            <div class="col-6">
-                <form>
-                    <div class="mb-3">
-                      <label for="exampleInputEmail1" class="form-label">Last Name</label>
-                      <input type="text" class="form-control" aria-label="Username" aria-describedby="basic-addon1">
-            
-                    </div>
-                </form>
-            </div>
-
-        </div>
-        <div class="row container-fluid">
-
-            <div class="col-6">
-                <form>
-                    <div class="mb-3">
-                      <label for="exampleInputEmail1" class="form-label">City</label>
-                      <input type="text" class="form-control" aria-label="Username" aria-describedby="basic-addon1">
-            
-                    </div>
-                </form>
-            </div>
-            <div class="col-3">
-                <label for="exampleInputEmail1" class="form-label">State</label>
-                <select class="form-select" aria-label="Default select example">
-                    <option selected>Pick State</option>
-                    <option value="1">One</option>
-                    <option value="2">Two</option>
-                    <option value="3">Three</option>
-                  </select>
-            </div>
-
-            <div class="col-3">
-                <form>
-                    <div class="mb-3">
-                      <label for="exampleInputEmail1" class="form-label">Postal Code</label>
-                      <input type="text" class="form-control" aria-label="Username" aria-describedby="basic-addon1">
-            
-                    </div>
-                </form>
-            </div>
-
-        </div>
-        <div class="row container">
-
-            <div class="col-6">
-                <form>
-                    <div class="mb-3">
-                      <label for="exampleInputEmail1" class="form-label">We accept:</label>
-
-                    <div class="d-flex bg-secondary px-2 w-50 grid gap-4 text-light">
-                      <div class="form-check">
-                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-                        <label class="form-check-label" for="flexRadioDefault1">
-                            <i class="fa-brands fa-cc-mastercard"></i>
-                        </label>
-                      </div>
-                      <div class="form-check">
-                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
-                        <label class="form-check-label" for="flexRadioDefault2">
-                            <i class="fa-brands fa-cc-visa"></i>
-                        </label>
-                      </div>
-                      <div class="form-check">
-                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-                        <label class="form-check-label" for="flexRadioDefault1">
-                            <i class="fa-brands fa-cc-paypal"></i>
-                        </label>
-                      </div>
-                      <div class="form-check">
-                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
-                        <label class="form-check-label" for="flexRadioDefault2">
-                            <i class="fa-brands fa-cc-diners-club"></i>
-                        </label>
-                      </div>
-                    </div>
-
-                    </div>
-                </form>
-            </div>
-            <div class="col-6">
-                <form>
-                
-                        <div class="mb-3">
-                            <label for="exampleFormControlTextarea1" class="form-label">Message</label>
-                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-                          </div>
-                     <div id="exampleFormControlTextarea1" class="form-text">Add any notes here.</div>
-                
-                </form>
-            </div>
-
-        </div>
-
-        <div class="card-footer text-body-secondary d-flex justify-content-end gap-2">
-         
-            <button type="button" class="btn btn-secondary">Cancel</button>
-            <button type="button" class="btn btn-primary">Send</button>
-
-        </div>
+      <div class="alert alert-danger text-danger" role="alert">
+        Some fields are missing
       </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+      <div class="row container-fluid">
+        <div class="col-5">
+          <form id="CreateForm" class="formulario1" action="envio.php" method="post">
+            <div class="mb-3">
+              <label for="exampleInputCard" class="form-label">Card #</label>
+              <input type="text" class="form-control" placeholder="xxxxxxxxxxxx" aria-label="exampleInputCard"
+                aria-describedby="basic-addon1">
+
+            </div>
+          </form>
+        </div>
+        <div class="col-3">
+          <form id="CreateForm" class="formulario1" action="envio.php" method="post">
+            <div class="mb-3">
+              <label for="exampleInputCvc" class="form-label">CVC #</label>
+              <input type="text" class="form-control" placeholder="0000" aria-label="exampleInputCvc"
+                aria-describedby="basic-addon1">
+            </div>
+          </form>
+        </div>
+        <div class="col-4">
+          <form id="CreateForm" class="formulario1" action="envio.php" method="post">
+            <div class="mb-3">
+              <label for="exampleInputAmount" class="form-label">Amount</label>
+              <div class="input-group mb-3 d-flex align-items-center gap-2">
+                <span>$</span>
+                <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
+              </div>
+            </div>
+          </form>
+        </div>
+
+      </div>
+
+      <div class="row container-fluid">
+
+        <div class="col-6">
+          <form id="CreateForm" class="formulario1" action="envio.php" method="post">
+            <div class="mb-3">
+              <label for="exampleInputName" class="form-label">First Name</label>
+              <input type="text" class="form-control" aria-label="exampleInputName" aria-describedby="basic-addon1">
+
+            </div>
+          </form>
+        </div>
+        <div class="col-6">
+          <form id="CreateForm" class="formulario1" action="envio.php" method="post">
+            <div class="mb-3">
+              <label for="exampleInputLName" class="form-label">Last Name</label>
+              <input type="text" class="form-control" aria-label="exampleInputLName" aria-describedby="basic-addon1">
+
+            </div>
+          </form>
+        </div>
+
+      </div>
+      <div class="row container-fluid">
+
+        <div class="col-6">
+          <form id="CreateForm" class="formulario1" action="envio.php" method="post">
+            <div class="mb-3">
+              <label for="exampleInputCity" class="form-label">City</label>
+              <input type="text" class="form-control" aria-label="exampleInputCity" aria-describedby="basic-addon1">
+
+            </div>
+          </form>
+        </div>
+        <div class="col-3">
+          <label for="exampleInputState" class="form-label">State</label>
+          <select class="form-select" aria-label="Default select example">
+            <option selected>Pick State</option>
+            <option value="1">One</option>
+            <option value="2">Two</option>
+            <option value="3">Three</option>
+          </select>
+        </div>
+
+        <div class="col-3">
+          <form id="CreateForm" class="formulario1" action="envio.php" method="post">
+            <div class="mb-3">
+              <label for="exampleInputPostal" class="form-label">Postal Code</label>
+              <input type="text" class="form-control" aria-label="PostalCode" aria-describedby="basic-addon1">
+
+            </div>
+          </form>
+        </div>
+
+      </div>
+      <div class="row container">
+
+        <div class="col-6">
+          <form id="CreateForm" class="formulario1" action="envio.php" method="post">
+            <div class="mb-3">
+              <label for="exampleInputCard" class="form-label">We accept:</label>
+
+              <div class="d-flex bg-secondary px-2 w-50 grid gap-4 text-light">
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                  <label class="form-check-label" for="flexRadioDefault1">
+                    <i class="fa-brands fa-cc-mastercard"></i>
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                  <label class="form-check-label" for="flexRadioDefault2">
+                    <i class="fa-brands fa-cc-visa"></i>
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                  <label class="form-check-label" for="flexRadioDefault1">
+                    <i class="fa-brands fa-cc-paypal"></i>
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                  <label class="form-check-label" for="flexRadioDefault2">
+                    <i class="fa-brands fa-cc-diners-club"></i>
+                  </label>
+                </div>
+              </div>
+
+            </div>
+          </form>
+        </div>
+        <div class="col-6">
+          <form id="CreateForm" class="formulario1" action="envio.php" method="post">
+
+            <div class="mb-3">
+              <label for="exampleFormControlTextarea1" class="form-label">Message</label>
+              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+            </div>
+            <div id="exampleFormControlTextarea1" class="form-text">Add any notes here.</div>
+
+          </form>
+        </div>
+
+      </div>
+
+      <div class="card-footer text-body-secondary d-flex justify-content-end gap-2">
+
+        <button type="button reset" class="btn btn-secondary formulario1" form="CreateForm">Cancel</button>
+        <button type="button submit" class="btn btn-primary formulario1" form="CreateForm">Send</button>
+
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+      integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+      crossorigin="anonymous"></script>
 </body>
+
 </html>
